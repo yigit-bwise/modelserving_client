@@ -42,6 +42,9 @@ Note: For using gRPC protocol ports 7070:7071 need to be open.
 Once the docker image is running, you can send gRPC using: 
 `python proto/torchserve_grpc_client.py infer hardhats_detector "path_to_image" "your_ec2_url" `
 
+Current test cmd:
+`python3 proto/torchserve_grpc_client.py infer_test hardhats_detector proto/hh.jpg '13.49.245.51'`
+
 This part can be run from the local machine. The output should print a list with the coordinates of the detected objects and it's label. It should also display the inference image with the bounding boxes of the detections. 
 
 Note: The name used in the gRPC call, *hardhats_detector*, is the model name and it's defined in the docker file.
