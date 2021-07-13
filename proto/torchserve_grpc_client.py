@@ -1,8 +1,8 @@
 import grpc
-from . import inference_pb2
-from . import inference_pb2_grpc
-from . import management_pb2
-from . import management_pb2_grpc
+import inference_pb2
+import inference_pb2_grpc
+import management_pb2
+import management_pb2_grpc
 import cv2
 import base64
 import numpy as np
